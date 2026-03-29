@@ -1,0 +1,18 @@
+name: test-generator
+
+description: Auto-generates backend and frontend tests with best practices for this monorepo.
+
+triggers:
+  - generate tests
+  - write tests
+  - add unit tests
+  - create test file
+  - test coverage
+
+instructions: |
+  When triggered, generate tests according to these rules:
+  - Always create the test file alongside the source file.
+  - Use Arrange/Act/Assert structure in all tests.
+  - Name tests descriptively: test_<action>_<condition>_<expected>.
+  - Backend: use pytest + pytest-asyncio, httpx.AsyncClient for API, factories (not fixtures) for test data, mock AsyncSession with AsyncMock.
+  - Frontend: use vitest + React Testing Library, mock React Query hooks, test user interactions (not implementation details).

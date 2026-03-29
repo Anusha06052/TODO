@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+*.egg-info/
+alembic/versions/*.pyc
+.env
+
+# Node/React
+node_modules/
+dist/
+.env
+.env.local
+*.local
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/agents/
+
+# OS
+.DS_Store
+Thumbs.db

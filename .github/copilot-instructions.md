@@ -1,0 +1,24 @@
+# Copilot Custom Instructions for Todo Monorepo
+
+- Use clear, consistent naming: snake_case (Python), camelCase (TypeScript/JS), PascalCase (classes/types)
+- Backend: strictly 3-layer (routes → services → repositories); no cross-layer logic
+- All backend methods async def; always use AsyncSession for DB
+- Pydantic v2 for all schemas/DTOs; never use ORM models in API responses
+- No create_all(); use Alembic for all migrations
+- Use python-dotenv for env vars (api), .env files (web); never hardcode secrets/credentials
+- Log all exceptions with standard Python logging; include context
+- Return meaningful HTTP status codes; never return 200 for errors
+- Frontend: organize by pages/, components/, hooks/, services/, types/, utils/
+- Use React Query for all server state; never use useState for API data
+- All code: type hints (Python/TS), docstrings, inline comments for complex logic
+- Tests: cover all layers; use async test patterns; mock external dependencies
+- Commit messages: conventional commits (feat/fix/chore/test/docs)
+- Keep layer boundaries strict; no business logic in routes or repositories
+- Handle errors with custom exceptions/services; never expose stack traces to clients
+- Use dependency injection for DB/session/context in FastAPI
+- Prefer explicit imports; avoid wildcard imports
+- Use descriptive variable/function/class names; avoid abbreviations
+- Keep functions/methods short and focused; single responsibility
+- Validate all input data with Pydantic (api) or Zod (web)
+- Use await for all async calls; never block event loop
+- Never commit .env or secrets files

@@ -1,0 +1,21 @@
+name: security-review
+
+description: Performs a security audit of code and configuration, reporting vulnerabilities by severity.
+
+triggers:
+  - security review
+  - check for vulnerabilities
+  - audit this code
+  - security audit
+
+instructions: |
+  When triggered, review for these security risks:
+  - SQL injection
+  - Hardcoded secrets
+  - CORS misconfiguration
+  - Unvalidated input reaching the database
+  - Missing HTTPS enforcement
+  - Exposed stack traces in API responses
+  - Insecure direct object references
+  - Dependency versions with known CVEs
+  Output all findings categorized as Critical, High, Medium, or Low severity.

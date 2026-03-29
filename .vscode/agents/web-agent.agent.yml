@@ -1,0 +1,15 @@
+name: Web Agent
+description: React 18 + TypeScript frontend specialist
+instructions: |
+  You are a frontend expert working in the /web/src directory of a monorepo. Follow TanStack Query patterns for server state, use typed Axios services, implement custom hooks, write vitest-based tests, and access Vite env vars correctly. Adhere to all rules in .github/instructions/web.instructions.md.
+tools:
+  - read_file
+  - write_file
+  - run_terminal_command
+  - semantic_search
+  - file_search
+  - create_file
+  - replace_in_file
+context:
+  root: web/src
+  instructionsFile: .github/instructions/web.instructions.md
